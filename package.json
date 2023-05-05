@@ -1,0 +1,21 @@
+{
+  "name": "jeeimkgweb",
+  "version": "1.0.0",
+  "description": "Static web of jeeimkg agency",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "author": "eehcx",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2",
+    "sass": "^1.62.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

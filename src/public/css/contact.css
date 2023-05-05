@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;400;500&display=swap");
+body,
+html {
+  height: 100%;
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Alegreya Sans SC", sans-serif;
+  background: #090909;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+body ::selection {
+  background: #294899;
+  color: #fff;
+}
+
+header.header-content {
+  height: 110vh;
+  width: 100%;
+}
+
+.contact-header {
+  background-image: url("https://jeeimkg-static.s3.us-west-1.amazonaws.com/Fondos/main1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  width: 80vh;
+  display: block;
+  float: right;
+  margin-top: 7%;
+}
+
+h1.main-title {
+  display: block;
+  float: left;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 6rem;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+h1.main-title strong {
+  font-weight: 500;
+  color: #5772b7;
+}
+
+.title-form {
+  display: block;
+  float: right;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 70px;
+  margin-top: 3%;
+  margin-right: 10%;
+}
+
+main {
+  margin-bottom: 10%;
+}
+
+form {
+  display: inline-block;
+  max-width: 600px;
+  margin: 50px auto;
+  margin-left: 5%;
+}
+form option {
+  color: #191919;
+}
+form .feedback-input {
+  color: #696969;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #191919;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+form .feedback-input:focus {
+  border: 2px solid #cc1517;
+}
+form textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: none;
+}
+form [type=submit] {
+  font-family: "Alegreya Sans SC", sans-serif;
+  width: 100%;
+  background: #191919;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 0.5s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+form [type=submit]:hover {
+  background: #cc1517;
+}
+
+/*# sourceMappingURL=contact.css.map */

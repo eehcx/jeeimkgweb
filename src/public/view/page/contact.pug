@@ -1,0 +1,136 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Contacto | JEEIMKG
+        link(rel="shortcut icon", href="https://jeeimkg-static.s3.us-west-1.amazonaws.com/images/ico/ico.png", type="image/x-icon")
+        // Estilos css
+        link(rel="stylesheet", href="css/navbar.css")
+        link(rel="stylesheet", href="css/contact.css")
+        link(rel="stylesheet", href="css/footer.css")
+
+        // javascript vanilla del proyecto
+        script(src="js/scrolldown.js" defer) 
+        script(src="js/navbar.js" defer)
+        script(src="js/loading.js" defer)
+        // javascript de librerias (JQuery, Bootstrap, etc)
+        script(src="https://code.jquery.com/jquery-3.6.1.min.js") 
+
+    body 
+        nav.navbar#navbar
+            .logo 
+                a(href='/')
+                    h1 JEEIMKG
+            ul.navbar-list#navigation
+                li
+                    a(class='navbar-link' href='') about us 
+                li
+                    a(class='navbar-link' href='') work 
+                li
+                    a(class='navbar-link' href='') opinions 
+                li
+                    a(class='navbar-link' href='') products 
+                li
+                    a(class='navbar-link' href='/contact') contact
+
+        aside
+            div(class="outer-close toggle-overlay")
+                a.close
+                    span
+            nav 
+                ul.navbar-responsive#navbar-responsive
+                    li 
+                        a(class="navbar-break" href="") about us
+                    br
+                    li 
+                        a(class="navbar-break" href="") work
+                    br
+                    li 
+                        a(class="navbar-break" href="") opinions
+                    br
+                    li 
+                        a(class="navbar-break" href="") products
+                    br
+                    li 
+                        a(class="navbar-break" href="/contact") contact
+
+        div.hamburger-menu.toggle-overlay
+            div.bar
+
+        header.header-content
+            h1.main-title 
+                | let's build
+                br 
+                | something
+                br 
+                strong 
+                    | amazing
+            div(class="contact-header" data-src="https://jeeimkg-static.s3.us-west-1.amazonaws.com/Fondos/main.jpg")
+
+        main
+            h2.title-form
+                | Aplica ahora y 
+                br
+                | en un momento
+                br
+                | te contactaremos.
+            form(action="" method="post")
+                input.feedback-input(type="text", name="name", placeholder="Nombre Completo" required)
+                input( class="feedback-input" type="email", name="email" placeholder="Email Laboral" required)
+                input( class="feedback-input" type="text", name="phone" placeholder="Teléfono" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required)
+                textarea(class="feedback-input" placeholder="Asunto" name="" cols="30" rows="10") 
+                input.button(type="submit", value="Enviar")
+
+        footer.footer
+            .footer__addr
+                .footer__logo
+                    img(src="https://jeeimkg-static.s3.us-west-1.amazonaws.com/Adicionales/footer-logo.png", loading="lazy", alt="Logo de la organización Jóvenes Emprendedores e Innovadores", srcset="")
+                h2
+                    | Contacto 
+                address
+                    | 1010 Avenue, sw 54321, chandigarh
+                    br
+                    a.footer__btn(href="mailto:jeeimkg@gmail.com") Email Us
+            ul.footer__nav
+                li.nav__item
+                    h2.nav__title Redes
+                    ul.nav__ul
+                        li 
+                            a(href="https://wa.me/529933011834?text=Hola" target="_BLANK") Whatsapp
+                        li
+                            a(href="https://www.facebook.com/jeeimkg" target="_BLANK") Facebook
+                        li
+                            a(href="https://www.instagram.com/jeeimkg" target="_BLANK") Instagram
+                        li 
+                            a(href="https://www.tiktok.com/@jeeimkg" target="_BLANK") TikTok
+                li.nav__item.nav__item--extra
+                    h2.nav__title Enlaces Útiles
+                    ul.nav__ul.nav__ul--extra
+                        li 
+                            a(href="/") Nuestros Clientes
+                        li 
+                            a(href="/") Nuestros Productos
+                        li 
+                            a(href="/") Nuestra Fundación
+                        li 
+                            a(href="/") Empresas Afiliadas
+                        li 
+                            a(href="/") Nuestra Trayectoría
+                        li 
+                            a(href="/") Conferencias
+                li.nav__item
+                    h2.nav__title Legal
+                    ul.nav__ul
+                        li 
+                            a(href="/") Política de Privacidad
+                        li 
+                            a(href="/") Términos de Uso
+                        li
+                            a(href="/") Cookies
+            .legal
+                p
+                    | Copyright &copy; 2023, All Right Reserved 
+                    a(href="/")
+                        | jeeimkg

@@ -1,0 +1,8 @@
+# Dependencias
+/node_modules
+
+# Archivos sass 
+/src/public/scss
+*.sass-cache
+*.css.map
+*.scss

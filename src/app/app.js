@@ -20,4 +20,8 @@ app.get('/contact', (req, res) => {
     res.render("page/contact")
 })
 
+app.get('/work', (req, res) => {
+    res.render("page/work")
+})
+
 module.exports = app;

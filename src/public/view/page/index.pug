@@ -6,12 +6,18 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title JEEIMKG | Design, Creation and Development Agency
         link(rel="shortcut icon", href="https://jeeimkg-static.s3.us-west-1.amazonaws.com/images/ico/ico.png", type="image/x-icon")
+
         // Estilos css
-        link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="css/base.style.css")
         link(rel="stylesheet", href="css/navigation.css")
+        link(rel='stylesheet', href='/css/tailwind.output.css')
+        link(rel='stylesheet', href='/css/base.style.css')
+
+
         // javascript vanilla del proyecto
         script(src="js/navbar.js" defer)
         script(src="js/modal.js" defer)
+
         // javascript de librerias (JQuery, Bootstrap, etc)
         script(src="https://code.jquery.com/jquery-3.6.1.min.js")    
 
@@ -24,7 +30,7 @@ html(lang="en")
                 li
                     a(class='navbar-link' href='') about us 
                 li
-                    a(class='navbar-link' href='') work 
+                    a(class='navbar-link' href='/work') work 
                 li
                     a(class='navbar-link' href='') opinions 
                 li
@@ -42,7 +48,7 @@ html(lang="en")
                         a(class="navbar-break" href="") about us
                     br
                     li 
-                        a(class="navbar-break" href="") work
+                        a(class="navbar-break" href="/work") work
                     br
                     li 
                         a(class="navbar-break" href="") opinions
@@ -71,5 +77,4 @@ html(lang="en")
                                 | products
                                 br
                                 | platforms
-    // https://www.youtube.com/watch?v=5s-QkOUNJsk 34:07 min
 

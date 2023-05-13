@@ -24,4 +24,12 @@ app.get('/work', (req, res) => {
     res.render("page/work")
 })
 
+app.get('/about', (req, res) => {
+    res.render("page/about")
+})
+
+app.get('/404', (req, res) => {
+    res.render("page/404")
+})
+
 module.exports = app;

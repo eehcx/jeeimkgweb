@@ -6,3 +6,7 @@
 *.sass-cache
 *.css.map
 *.scss
+
+# Firebase 
+.firebaserc
+firebase.json

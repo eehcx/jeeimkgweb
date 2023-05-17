@@ -123,4 +123,40 @@ form [type=submit]:hover {
   background: #cc1517;
 }
 
+@media screen and (max-width: 500px) {
+  .contact-header {
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90%;
+    width: 100%;
+    display: block;
+    margin: 18% 0px;
+  }
+  h1.main-title {
+    display: block;
+    float: left;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 5.5rem;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+  h1.main-title strong {
+    font-weight: 500;
+    color: #5772b7;
+  }
+  .title-form {
+    display: block;
+    float: right;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 2.9rem;
+    font-weight: 500;
+    color: #fff;
+    line-height: 70px;
+    margin-top: 3%;
+    margin-right: 7%;
+  }
+}
+
 /*# sourceMappingURL=contact.css.map */

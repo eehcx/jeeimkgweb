@@ -61,7 +61,7 @@ h1.main-title strong {
   display: block;
   float: right;
   font-family: "Be Vietnam Pro", sans-serif;
-  font-size: 3.5rem;
+  font-size: clamp(2.8rem, 5vw, 3.5rem);
   font-weight: 500;
   color: #fff;
   line-height: 70px;
@@ -76,7 +76,7 @@ main {
 form {
   display: inline-block;
   max-width: 600px;
-  margin: 50px auto;
+  margin: 35px auto;
   margin-left: 5%;
 }
 form option {
@@ -150,12 +150,18 @@ form [type=submit]:hover {
     display: block;
     float: right;
     font-family: "Be Vietnam Pro", sans-serif;
-    font-size: 2.9rem;
     font-weight: 500;
     color: #fff;
     line-height: 70px;
     margin-top: 3%;
     margin-right: 7%;
+  }
+}
+@media screen and (max-width: 700px) {
+  form {
+    display: inline-block;
+    max-width: auto;
+    margin: 30px;
   }
 }
 

@@ -31,7 +31,7 @@ header.header-content {
 }
 
 .contact-header {
-  background-image: url("https://jeeimkg-static.s3.us-west-1.amazonaws.com/Fondos/main1.jpg");
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/jeeimkg-5705b.appspot.com/o/main(1).jpg?alt=media&token=b5eb7ee8-26ea-4e91-90d0-80e4788bbe39&_gl=1*glm0fx*_ga*MjEwMTEyNjYzMy4xNjg0NzE1NjI1*_ga_CW55HF8NVT*MTY4NTQ3NjM2My4zLjEuMTY4NTQ3NzE4Ni4wLjAuMA..');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -41,6 +41,8 @@ header.header-content {
   float: right;
   margin-top: 7%;
 }
+
+
 
 h1.main-title {
   display: block;
@@ -143,7 +145,7 @@ form [type=submit]:hover {
     display: none;
   }
   .contact-header {
-    background-image: url("https://jeeimkg-static.s3.us-west-1.amazonaws.com/Fondos/main1.jpg");
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/jeeimkg-5705b.appspot.com/o/main.jpg?alt=media&token=6ab09e96-78ee-4d4d-bbb9-fe50279ce4c7&_gl=1*25f3jy*_ga*MjEwMTEyNjYzMy4xNjg0NzE1NjI1*_ga_CW55HF8NVT*MTY4NTQ3NjM2My4zLjEuMTY4NTQ3NjU5NS4wLjAuMA..');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -189,7 +191,7 @@ form [type=submit]:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 9999;
+  z-index: 9998;
   width: 60px;
   height: 60px;
   display: flex;

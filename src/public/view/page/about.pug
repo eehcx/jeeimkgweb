@@ -5,14 +5,19 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Acerca de | JEEIMKG
-        link(rel="shortcut icon", href="https://jeeimkg-static.s3.us-west-1.amazonaws.com/images/ico/ico.png", type="image/x-icon")
+        link(rel="shortcut icon", href="https://firebasestorage.googleapis.com/v0/b/jeeimkg-5705b.appspot.com/o/static%2Fico.ico?alt=media&token=c23affd4-77d1-471b-bef9-4e19e81f4964", type="image/x-icon")
 
         // Estilos css
-        link(rel="stylesheet", href="css/navigation.css")
+        link(rel="stylesheet", href="css/navbar.css")
         link(rel="stylesheet", href="css/about.css")
+        link(rel="stylesheet", href="css/footer.css")
 
         // javascript vanilla del proyecto
         script(src="js/navbar.js" defer)
+        script(src="js/scrolldown.js")
+
+        script(src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js")
+
 
     body
         nav.navbar#navbar
@@ -52,9 +57,73 @@ html(lang="en")
                     li 
                         a(class="navbar-break" href="/contact") contact
 
-        div(class="hamburger-menu toggle-overlay")
+        header#header
+            div(class="hamburger-menu toggle-overlay")
                 div.bar
+            h1.main-element Descubre cómo nuestra agencia de marketing puede impulsar tu éxito ¡Conoce nuestro ADN!
+        
+        script. 
+            anime({
+                targets: 'h1.main-element',
+                translateY: [-100, 0],
+                opacity: [0, 1],
+                easing: 'easeOutExpo',
+                duration: 3000
+            });
 
 
         section 
-            h1.main-element Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+
+
+        footer.footer
+            .footer__addr
+                .footer__logo
+                    img(src="https://firebasestorage.googleapis.com/v0/b/jeeimkg-5705b.appspot.com/o/static%2Ffooter-logo.webp?alt=media&token=bda93a35-f4ba-4d2d-b9d3-d334633e84a4", loading="lazy", alt="Logo de la organización Jóvenes Emprendedores e Innovadores", srcset="")
+                h2
+                    | Contacto 
+                address
+                    | 1010 Avenue, sw 54321, chandigarh
+                    br
+                    a.footer__btn(href="mailto:jeeimkg@gmail.com") Email Us
+            ul.footer__nav
+                li.nav__item
+                    h2.nav__title Redes
+                    ul.nav__ul
+                        li 
+                            a(href="https://wa.me/529933011834?text=Hola" target="_BLANK") Whatsapp
+                        li
+                            a(href="https://www.facebook.com/jeeimkg" target="_BLANK") Facebook
+                        li
+                            a(href="https://www.instagram.com/jeeimkg" target="_BLANK") Instagram
+                        li 
+                            a(href="https://www.tiktok.com/@jeeimkg" target="_BLANK") TikTok
+                li.nav__item.nav__item--extra
+                    h2.nav__title Enlaces Útiles
+                    ul.nav__ul.nav__ul--extra
+                        li 
+                            a(href="/") Nuestros Clientes
+                        li 
+                            a(href="/") Nuestros Productos
+                        li 
+                            a(href="/") Nuestra Fundación
+                        li 
+                            a(href="/") Empresas Afiliadas
+                        li 
+                            a(href="/") Nuestra Trayectoría
+                        li 
+                            a(href="/") Conferencias
+                li.nav__item
+                    h2.nav__title Legal
+                    ul.nav__ul
+                        li 
+                            a(href="/") Política de Privacidad
+                        li 
+                            a(href="/") Términos de Uso
+                        li
+                            a(href="/") Cookies
+            .legal
+                p
+                    | Copyright &copy; 2023, All Right Reserved 
+                    a(href="/")
+                        | jeeimkg
+            

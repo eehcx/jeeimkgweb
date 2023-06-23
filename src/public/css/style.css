@@ -99,23 +99,6 @@ b span {
   animation-delay: 3s;
 }
 
-@keyframes move {
-  0% {
-    top: 0px;
-  }
-  20% {
-    top: -100px;
-  }
-  40% {
-    top: -200px;
-  }
-  80% {
-    top: -100px;
-  }
-  100% {
-    top: 0px;
-  }
-}
 @media (max-width: 768px) {
   .content__container {
     font-size: 70px;

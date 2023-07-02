@@ -1,0 +1,254 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;400;500&display=swap");
+
+body,
+html {
+height: 100%;
+}
+
+* {
+border: 0;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: "Alegreya Sans SC", sans-serif;
+background: #090909;
+width: 100%;
+height: 100vh;
+margin: 0;
+padding: 0;
+
+::selection {
+    background: #294899;
+    color: #fff;
+}
+}
+
+header.header-content {
+height: 110vh;
+width: 100%;
+}
+
+.contact-header {
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 70vh;
+width: 80vh;
+display: block; 
+float: right;
+margin-top: 7%;
+}
+
+h1.main-title {
+    display: block; 
+    float: left;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: clamp(6.5rem, 5vw, 7.5rem);
+    font-weight: 500;
+    color: #fff;
+    margin: 11% 0px 0% 5%; /*Arriba, derecha, abajo, izquierda*/
+
+    strong {
+        font-weight: 500;
+        color: #5772b7;
+    }
+}
+
+.title-form {
+    display: block;
+    float: right;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: clamp(3.2rem, 5vw, 3.5rem);
+    font-weight: 500;
+    color: #fff;
+    line-height: 70px;
+    margin-top: 3%;
+    margin-right: 8%;
+}
+
+main {
+margin-bottom: 10%;
+}
+
+form {
+    display: inline-block;
+    max-width: 600px;
+    margin: 35px auto;
+    margin-left: 5%;
+
+    option {
+        color: #191919;
+    }
+
+    .feedback-input {
+        color: #696969;
+        font-family: "Be Vietnam Pro", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        background-color: transparent;
+        border: 2px solid #191919;
+        transition: all 0.3s;
+        padding: 13px;
+        margin-bottom: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        outline: 0;
+
+        &:focus {
+        border: 2px solid #cc1517;
+        }
+    }
+
+    textarea {
+        height: 150px;
+        line-height: 150%;
+        resize: none;
+    }
+
+    [type="submit"] {
+        font-family: "Alegreya Sans SC", sans-serif;
+        width: 100%;
+        background: #191919;
+        border: 0;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: .5s;
+        margin-top: -4px;
+        font-weight: 700;
+
+        &:hover {
+        background: #cc1517;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    h1.main-title {
+        display: block; 
+        float: left;
+        font-family: "Alegreya Sans SC", sans-serif;
+        font-weight: 500;
+        color: #fff;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+
+    .title-form {
+        display: flex;
+        justify-content: justify;
+        align-items: center;
+        line-height: 70px;
+        margin: 6% 6%;
+
+        br{
+            display: none;
+        }
+    }   
+
+    .contact-header {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 80vh;
+        width: 100%;
+        display: block; 
+        float: right;
+        margin: 15% 0%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    h1.main-title {
+        height: 45%;
+        display: block; 
+        float: left;
+        font-family: "Alegreya Sans SC", sans-serif;
+        font-weight: 500;
+        color: #fff;
+        margin-top: 20%;
+        margin-left: 5%;
+    }
+
+    form {
+        display: inline-block;
+        max-width: auto;
+        margin: 30px;
+    }
+
+    .title-form {
+        font-size: clamp(2.7rem, 5vw, 3.2rem);
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+
+    h1.main-title{
+        height: 40%;
+        margin-top: 30%;
+        margin-left: 8%;
+        font-size: clamp(4rem, 5vw, 6.5rem);
+    }
+
+    .title-form {
+        font-size: clamp(2rem, 5vw, 2.7rem);
+    }
+}
+
+.discord-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9998;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease-in-out;
+
+    &::before {
+    font-family: "Be Vietnam Pro", sans-serif;
+    content: "Join Discord";
+    position: absolute;
+    bottom: 100%;
+    left: 51%;
+    transform: translateX(-55%);
+    padding: 6px 10px;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 3px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    white-space: nowrap;
+    }
+
+    &:hover::before {
+    opacity: 1;
+    visibility: visible;
+    }
+
+    .discord-icon {
+        width: 80px;
+        height: 80px;
+        fill: #7289DA;
+        transition: background-color 1s ease;
+
+        &:hover {
+        fill: #fff;
+        }
+    }
+}

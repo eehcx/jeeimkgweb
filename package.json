@@ -1,25 +1,43 @@
 {
   "name": "jeeimkgweb",
-  "version": "1.0.0",
-  "description": "Static web of jeeimkg agency",
-  "main": "app.js",
-  "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
-  },
-  "author": "eehcx",
-  "license": "ISC",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "autoprefixer": "^10.4.14",
-    "express": "^4.18.2",
-    "lazysizes": "^5.3.2",
-    "morgan": "^1.10.0",
-    "postcss-cli": "^10.1.0",
-    "pug": "^3.0.2",
-    "sass": "^1.62.1",
-    "tailwindcss": "^3.3.2"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "sass": "^1.63.6",
+    "sass-loader": "^13.3.2"
   }
 }

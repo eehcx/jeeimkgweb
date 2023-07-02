@@ -18,7 +18,12 @@ function ContactPage() {
                 <h1 className='main-title '>
                     let's build <br/> something <br/> <strong>amazing</strong>
                 </h1>
-                <img className='contact-header lazyload' data-src="https://firebasestorage.googleapis.com/v0/b/jeeimkg-5705b.appspot.com/o/static%2Fmain(1).webp?alt=media&token=bf98a65e-7208-4a80-b2b8-354551f3a183" src="https://firebasestorage.googleapis.com/v0/b/jeeimkg-5705b.appspot.com/o/static%2Fmain1.webp?alt=media&token=e26b93ef-5926-4596-b2b6-be698112322a" alt="Imagen" ></img>
+                <img
+                    className='contact-header'
+                    src="https://firebasestorage.googleapis.com/v0/b/jeeimkg-5705b.appspot.com/o/static%2Fmain(1).webp?alt=media&token=bf98a65e-7208-4a80-b2b8-354551f3a183"
+                    loading='lazy'
+                    alt="Imagen"
+                />
             </header>
 
             <main>

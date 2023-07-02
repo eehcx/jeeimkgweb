@@ -27,7 +27,7 @@ const Navbar = memo((props) => {
                 </div>
 
                 <ul id="navigation" className="navbar-list">
-                    <li><a className="navbar-link" href="/">About</a></li>
+                    <li><a className="navbar-link" href="/about">About</a></li>
                     <li><a className="navbar-link" href="/">work</a></li>
                     <li><a className="navbar-link" href="/">opinions</a></li>
                     <li><a className="navbar-link" href="/">products</a></li>
@@ -43,7 +43,7 @@ const Navbar = memo((props) => {
                 </div>
                 <nav>
                     <ul id="navbar-responsive" className="navbar-responsive">
-                        <li><a className="navbar-break" href="/">About</a></li>
+                        <li><a className="navbar-break" href="/about">About</a></li>
                         <li><a className="navbar-break" href="/">work</a></li>
                         <li><a className="navbar-break" href="/">opinions</a></li>
                         <li><a className="navbar-break" href="/">products</a></li>

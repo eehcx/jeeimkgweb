@@ -1,18 +1,21 @@
 import PropTypes from 'prop-types'
 import React, { memo } from 'react'
 
-const Footer = memo((props) => {
+import '../css/FooterBlack.css';
+
+const Footer = ({ pageStyle }) => {
+
     return (
-    <>
-        <footer class="footer">
-            <div class="footer__addr">
-                <div class="footer__logo">
+    <div className={pageStyle}>
+        <footer className='footer'>
+            <div className='footer__addr'>
+                <div className='footer__logo'>
                     <img src="https://firebasestorage.googleapis.com/v0/b/jeeimkg-5705b.appspot.com/o/static%2Ffooter-logo.webp?alt=media&token=bda93a35-f4ba-4d2d-b9d3-d334633e84a4" loading="lazy" alt="Logo de la organización Jóvenes Emprendedores e Innovadores" />
                 </div>
                 <h2>Contacto</h2>
                 <address>1010 Avenue, sw 54321, chandigarh
                     <br />
-                    <a class="footer__btn" href="mailto:jeeimkg@gmail.com">Email Us</a>
+                    <a className='footer__btn' href="mailto:jeeimkg@gmail.com">Email Us</a>
                 </address>
             </div>
             <ul className="footer__nav">
@@ -97,15 +100,12 @@ const Footer = memo((props) => {
             </ul>
             <div className="legal">
                 <p>
-                    &copy; 2023, All Right Reserved
-                    <a href="/"> jeeimkg</a>
+                    &copy; 2023, All Right Reserved <a href="/"> jeeimkg</a>
                 </p>
             </div>
         </footer>
-    </>
+    </div>
     )
-})
-
-Footer.propTypes = {}
+}
 
 export default Footer

@@ -33,12 +33,11 @@ nav {
     bottom: 0;
     content: "";
     display: block;
-    height: 1.5px;
+    height: .3px;
     left: 50%;
     border-radius: 5px;
     position: absolute;
     background: #ffffff;
-    transition: width 0.7s ease 0s, left 0.7s ease 0s;
     width: 0;
   }
 
@@ -64,13 +63,19 @@ nav {
   .navbar-link:link,
   .navbar-link:visited {
     display: inline-block;
-    font-size: 13px;
+    font-size: 11px;
     margin-top: 10px;
-    margin-left: 60px; /*margen entre palabras*/
+    margin-left: 70px; /*margen entre palabras*/
     font-weight: 600;
+    letter-spacing: 2px;
   }
 
-  /*navbar al hacer scroll up*/
+
+
+/* Scroll up y responsive
+********************************************************************* */
+
+
 
   nav.down {
     background-color:#ffffff;
@@ -90,6 +95,7 @@ nav {
   .logo a {
     text-decoration: none;
     margin-bottom: 60px;
+    letter-spacing: 3px;
   }
   
   .logo a h1 {
@@ -108,9 +114,7 @@ nav {
   #nav-responsive{
     font-family: "Be Vietnam Pro", sans-serif;
   }
-  
-  
-  
+
   aside {
   position: fixed;
   width: 100%;
